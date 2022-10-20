@@ -1,10 +1,4 @@
 
-<br>
-
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
-![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
-
 <!-- CHANGE THE LINKS AS PER YOUR REQUIREMENTS -->
 <!-- YOU CAN REFER TO DEFAULT README PAGE FOR REFERENCE -->
 <!-- COLOR OF THE BADGES CAN ALSO BE MODIFIED BY ALTERING THE LINKS -->
@@ -28,21 +22,21 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/J-AlexandreMurray/Sudoku">
     <img src="preview/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Sudoku</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/J-AlexandreMurray/Sudoku"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/J-AlexandreMurray/Sudoku/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/J-AlexandreMurray/Sudoku/issues">Request Feature</a>
   </p>
 </p>
 
@@ -67,12 +61,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -120,28 +112,17 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/J-AlexandreMurray/Sudoku.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
+   
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/J-AlexandreMurray/Sudoku/issues) for a list of proposed features (and known issues).
 
 
 
@@ -168,17 +149,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+J. Alexandre Murray - [@twitter_handle](https://twitter.com/ProjectZilart)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-
-
+Project Link: [https://github.com/J-AlexandreMurray/Sudoku](https://github.com/J-AlexandreMurray/Sudoku)
 
