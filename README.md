@@ -83,8 +83,8 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
+* [C++]()
+* [Visual Studio Code]()
 
 
 <!-- LIVE DEMO -->
