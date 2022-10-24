@@ -3,13 +3,22 @@
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
+
+
+// Makes most sense to use this here instead of alternative.
 using namespace std;
+
+// Function to define empty and N variables
 #define empty 0
 #define N 9
+
+// Boolean to establish grid and slot potentiality.
 bool isGridSafe(int grid[N][N], int row, int col, int num);
 bool isEmptyLocation(int grid[N][N], int &row, int &col);
-/* assign values to all the zero (not assigned) values for Sudoku solution
- */
+
+/* Values assigned to all the zero (those that are unassigned) values for Sudoku solution.
+
+Check to see if puzzle was solved.*/
 bool SolveSudoku(int grid[N][N])
 {
     int row, col;
@@ -27,7 +36,9 @@ bool SolveSudoku(int grid[N][N])
     }
     return false;
 }
-/* Check for entries that don't have a value. */
+
+
+// Bool check for entries that don't have a value.
 bool isEmptyLocation(int grid[N][N], int &row, int &col)
 {
     for (row = 0; row < N; row++)
@@ -36,7 +47,9 @@ bool isEmptyLocation(int grid[N][N], int &row, int &col)
                 return true;
     return false;
 }
-/* Returns whether the assigned entry n in the particular row matches
+
+
+/* Returns whether the assigned entry N in the particular row matches
    the given number num. */
 bool UsedInRow(int grid[N][N], int prow, int number)
 {
@@ -45,7 +58,9 @@ bool UsedInRow(int grid[N][N], int prow, int number)
             return true;
     return false;
 }
-/* Returns true if the number num matches any number in the column */
+
+
+// Returns true if the number num matches any number in the column. 
 bool UsedInCol(int grid[N][N], int pcol, int number)
 {
     for (int row = 0; row < N; row++)
@@ -53,24 +68,29 @@ bool UsedInCol(int grid[N][N], int pcol, int number)
             return true;
   else 
      return false;
-//Check if the entry used already in the grid box
-bool UsedInBox(int grid[N][N], int boxBeginRow, int boxBeginCol, int number)
+}
+    // Check if the entry used already in the grid box.
+    bool UsedInBox(int grid[N][N], int boxBeginRow, int boxBeginCol, int number)
+
 
 {
     bool tf = false;
     for (int row = 0; row < 3; row++)
-        for (int col = 0; col < 3; col++)
-            if (grid[row+boxBeginRow][col+boxBeginCol] == number)
-                tf = true;
+            for (int col = 0; col < 3; col++)
+                if (grid[row+boxBeginRow][col+boxBeginCol] == number)
+                    tf = true;
     return tf;
 }
-/* Checks if num can be assigned to a given prow,pcol location. */
+
+
+// Checks if num can be assigned to a given prow,pcol location.
 bool isGridSafe(int grid[N][N], int prow, int pcol, int number)
-{
+{    
     return !UsedInRow(grid, prow, number) && !UsedInCol(grid, pcol, number) &&
            !UsedInBox(grid, prow - prow % 3 , pcol - pcol % 3, number);
-}
-/* print result  */
+}  
+
+// Print result.
 void printResult(int finalgrid[N][N])
 {
     for (int row = 0; row < N; row++)
@@ -80,7 +100,8 @@ void printResult(int finalgrid[N][N])
         cout<<endl;
     }
 }
-/* Main */
+
+// Main
 int main()
 {
     int grid[N][N] = {{0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -95,6 +116,6 @@ int main()
 if (SolveSudoku(grid) == true)
           printResult(grid);
     else
-        cout<<"No solution found"<<endl;
+        cout<<"Unfortunately, no solution found."<<endl;
     return 0;
 }
